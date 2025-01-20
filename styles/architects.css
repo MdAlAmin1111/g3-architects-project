@@ -9,3 +9,96 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* shared styles */
+.dark-1{
+ color: rgba(19, 19, 19, 1);
+}
+.dark-2{
+    color: rgba(66, 66, 66, 1);
+}
+.dark-3{
+    color: rgba(114, 114, 114, 1);
+}
+.display-flex{
+    display: flex;
+}
+.primary-button{
+    padding: 20px 25px;
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+/* header section styles */
+
+/* nav related styles */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+}
+.brand{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.nav-links{
+    gap: 3rem;
+}
+.nav-item{
+    list-style-type: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.13rem;
+}
+
+/* banner related styles */
+
+.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+.banner-content{
+    max-width: 862px;
+    margin: 0px auto;
+    text-align: center;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.banner-content > button{
+    margin-bottom: 2rem;
+}
+.banner-image > img{
+    width: 100%;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        /* padding: 2rem; */
+    }
+    header {
+        padding: 0 2rem;
+    }
+}
